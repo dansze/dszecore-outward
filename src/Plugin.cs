@@ -7,18 +7,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-// RENAME 'OutwardModTemplate' TO SOMETHING ELSE
-namespace OutwardModTemplate
+// RENAME 'Dszecore' TO SOMETHING ELSE
+namespace Dszecore
 {
     [BepInPlugin(GUID, NAME, VERSION)]
     public class Plugin : BaseUnityPlugin
     {
         // Choose a GUID for your project. Change "myname" and "mymod".
-        public const string GUID = "myname.mymod";
+        public const string GUID = "dsze.core";
         // Choose a NAME for your project, generally the same as your Assembly Name.
-        public const string NAME = "My Mod";
+        public const string NAME = "Dszecore";
         // Increment the VERSION when you release a new version of your mod.
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "0.1.0";
 
         // For accessing your BepInEx Logger from outside of this class (eg Plugin.Log.LogMessage("");)
         internal static ManualLogSource Log;
@@ -29,12 +29,6 @@ namespace OutwardModTemplate
         // Awake is called when your plugin is created. Use this to set up your mod.
         internal void Awake()
         {
-            Log = this.Logger;
-            Log.LogMessage($"Hello world from {NAME} {VERSION}!");
-
-            // Any config settings you define should be set up like this:
-            ExampleConfig = Config.Bind("ExampleCategory", "ExampleSetting", false, "This is an example setting.");
-
             // Harmony is for patching methods. If you're not patching anything, you can comment-out or delete this line.
             new Harmony(GUID).PatchAll();
         }
