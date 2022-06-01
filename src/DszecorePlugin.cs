@@ -2,16 +2,11 @@
 using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-// RENAME 'Dszecore' TO SOMETHING ELSE
 namespace Dszecore
 {
     [BepInPlugin(GUID, NAME, VERSION)]
-    public class Plugin : BaseUnityPlugin
+    public class DszecorePlugin : BaseUnityPlugin
     {
         // Choose a GUID for your project. Change "myname" and "mymod".
         public const string GUID = "dsze.core";
@@ -38,19 +33,6 @@ namespace Dszecore
         internal void Update()
         {
 
-        }
-
-        // This is an example of a Harmony patch.
-        // If you're not using this, you should delete it.
-        [HarmonyPatch(typeof(ResourcesPrefabManager), nameof(ResourcesPrefabManager.Load))]
-        public class ResourcesPrefabManager_Load
-        {
-            static void Postfix()
-            {
-                // This is a "Postfix" (runs after original) on ResourcesPrefabManager.Load
-                // For more documentation on Harmony, see the Harmony Wiki.
-                // https://harmony.pardeike.net/
-            }
         }
     }
 }
