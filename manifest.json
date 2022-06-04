@@ -2,6 +2,6 @@
     "name": "Dancore",
     "description": "Shared dependencies for my other mods",
     "version_number": "0.1.0",
-    "dependencies": "sinai-dev-SideLoader-3.7.11",
+    "dependencies": ["sinai-dev-SideLoader-3.7.11"],
     "website_url": "https://github.com/dansze/outward-dancore"
 }
