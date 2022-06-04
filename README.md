@@ -1,4 +1,4 @@
-# Dsze Core
+# Dancore
 An Outward mod that sets up commonly used effects required by my other mods.
 
 ## Feature List
@@ -17,4 +17,4 @@ Applies an enchantment to an equipped item. Each time the effect is applied, if 
 Patches that open up new options for using existing assets in cleaner ways.
 
 #### StatusEffect End Effects
-Patches the StatusEffect class to apply Effects of category "Referenced" exactly once when the status ends. The effect is applied and then immediately unapplied if supported.
+Patches the StatusEffect class to apply Effects of category "Referenced" exactly once when the status ends. The effect is applied and then immediately unapplied (if supported).
